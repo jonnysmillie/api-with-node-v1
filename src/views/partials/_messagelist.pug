@@ -1,0 +1,15 @@
+for message in directmessages
+  li
+    h3 Conversation with
+      a  #{message.messagescreenname}
+    ul.app--message--conversation
+      li.app--message
+        .app--avatar(style="background-image: url(" + message.messageprofilepic + ")")
+          img(src= message.messageprofilepic)
+        p.app--message--text #{message.messagetext}
+        p.app--message--timestamp #{message.messagetime}
+//      li.app--message--me
+//        .app--avatar(style="background-image: url(" + profileimage + ")")
+//           img(src= profileimage)
+//        p.app--message--text
+//        p.app--message--timestamp

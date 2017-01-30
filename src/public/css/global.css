@@ -794,6 +794,7 @@ a:hover {
   color: #0c85d0;
 }
 
+
 /* line 4, ../sass/circle/core/_buttons.sass */
 .button,
 button,
@@ -1529,6 +1530,7 @@ li:only-child .circle--clone--remove {
 /* line 39, ../sass/circle/components/_headers.sass */
 .circle--header nav {
   display: inline-block;
+  padding-bottom: 10px;
 }
 /* line 42, ../sass/circle/components/_headers.sass */
 .circle--header strong {
@@ -2121,7 +2123,7 @@ body {
   float: left;
   width: 35px;
   fill: #fff;
-  margin: -3px 15px -3px 0;
+  margin: -3px 15px -3px 15px;
 }
 /* line 20, ../sass/global.sass */
 .logo h1 {
@@ -2181,6 +2183,7 @@ body {
 /* line 53, ../sass/global.sass */
 .app--section--header {
   position: fixed;
+  height: 62px;
   top: 65px;
   right: 0;
   left: 0;
@@ -2226,6 +2229,26 @@ body {
   -o-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
 }
+
+.header--avatar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 44px;
+  height: 44px;
+  float: left;
+  margin-right: 10px;
+  margin-top: -10px;
+  margin-left: 0px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -ms-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+
 /* line 87, ../sass/global.sass */
 a:hover .app--avatar {
   box-shadow: 0 0 0 4px #1da1f2 inset;
@@ -2245,6 +2268,7 @@ a:hover .app--avatar {
   background: #e8f5fe;
   padding: 20px 15px;
   border-top: 1px solid #d4edfd;
+  display: none;
 }
 /* line 102, ../sass/global.sass */
 .app--tweet form,
@@ -2272,7 +2296,7 @@ a:hover .app--avatar {
 /* line 117, ../sass/global.sass */
 .app--tweet--char {
   position: absolute;
-  right: 30px;
+  right: 40px;
   bottom: 12px;
   color: #ccc;
   font-size: 1.8rem;
@@ -2499,4 +2523,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   padding: 16px 20px;
+}
+
+.button-tweet {
+  vertical-align: top
 }
